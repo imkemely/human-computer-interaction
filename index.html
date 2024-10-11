@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 1rem 0;
+            flex-wrap: wrap; /* Ensures links wrap on smaller screens */
+        }
+
+        nav button {
+            color: #fff;
+            background-color: #444;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav button:hover {
+            background-color: #ffdd57;
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        #content {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Query for mobile devices */
+        @media (max-width: 768px) {
+            nav button {
+                font-size: 0.9rem; /* Reduce font size on smaller screens */
+                margin: 0.5rem;    /* Adjust margins for better spacing */
+                padding: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem; /* Reduce heading size on smaller screens */
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            footer {
+                font-size: 0.9rem; /* Adjust footer text size */
+            }
+        }
+
+        /* Media Query for extra-small devices */
+        @media (max-width: 480px) {
+            nav button {
+                font-size: 0.8rem; /* Further reduce font size for very small screens */
+                margin: 0.25rem;
+                padding: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Human-Computer Interaction</h1>
+        <nav>
+            <button onclick="displayContent('about')">About</button>
+            <button onclick="displayContent('research')">Research</button>
+            <button onclick="displayContent('personas')">Personas</button>
+            <button onclick="displayContent('scenario')">Scenario</button>
+            <button onclick="displayContent('storyboard')">Storyboard</button>
+            <button onclick="displayContent('moodboard')">Moodboard</button>
+            <button onclick="displayContent('flowchart')">Flowchart</button>
+            <button onclick="displayContent('wireframes')">Wireframes</button>
+            <button onclick="displayContent('gui')">GUI</button>
+            <button onclick="displayContent('prototype')">Prototype</button>
+            <button onclick="displayContent('references')">References</button>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <p>Click the buttons above to explore different sections of this project.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Human-Computer Interaction Project</p>
+    </footer>
+
+    <script>
+        function displayContent(section) {
+            const contentDiv = document.getElementById('content');
+            
+            const content = {
+                about: "<h2>About</h2><p>This section contains information about the project and its objectives.</p>",
+                research: "<h2>Research</h2><p>This section highlights the research conducted for this project.</p>",
+                personas: "<h2>Personas</h2><p>Details about user personas are presented here to represent different user types.</p>",
+                scenario: "<h2>Scenario</h2><p>A real-life scenario that illustrates how users would interact with the project.</p>",
+                storyboard: "<h2>Storyboard</h2><p>The storyboard illustrates the interaction flow of the user through the project interface.</p>",
+                moodboard: "<h2>Moodboard</h2><p>The moodboard showcases the aesthetic direction of the project.</p>",
+                flowchart: "<h2>Flowchart</h2><p>This flowchart outlines the logical structure of the project and its features.</p>",
+                wireframes: "<h2>Wireframes</h2><p>The wireframes give a visual blueprint of the interface design.</p>",
+                gui: "<h2>GUI</h2><p>The graphical user interface (GUI) design and key elements are discussed here.</p>",
+                prototype: "<h2>Prototype</h2><p>A clickable prototype demonstrating the functionality of the project.</p>",
+                references: "<h2>References</h2><p>A list of references and resources used throughout the project.</p>"
+            };
+
+            // Update content area based on the button clicked
+            contentDiv.innerHTML = content[section] || "<p>Content not available.</p>";
+        }
+    </script>
+</body>
+</html>
