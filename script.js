@@ -34,10 +34,14 @@ function displayContent(section) {
                     <img src="profilepics\\carlosmejia.jpg" alt="Kemely Photo">
                 </div>
                 <div class="about-description">
-                    <h3> Carlos Mejia </h3>
-                    <p> Hi! I'm Carlos, a computer science student with a passion for game development and web design. </p>
-                    <h3> Kemely </h3>
-                    <p> teammate description </p>
+                    <div class="description-box">
+                        <h3>Carlos Mejia</h3>
+                        <p> Hi! I'm Carlos, a computer science student with a passion for game development and web design. </p>
+                    </div>
+                    <div class="description-box">
+                        <h3>Kemely</h3>
+                        <p>teammate description</p>
+                    </div>
                 </div>
             </div>
             `,

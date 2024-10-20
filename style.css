@@ -136,7 +136,7 @@ p {
     object-fit: cover;
     border-radius: 50%;
     margin: 0 30px;
-    margin-top: 30px;
+    margin-top: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds smooth transitions */
 }
@@ -151,20 +151,27 @@ p {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ensures the text is vertically aligned with the images */
-    min-width: 200px; /* Ensures a minimum width for responsiveness */
+    justify-content: center;
+}
+
+.description-box {
+    border: 2px solid #ddd; /* Adds border */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    background-color: #4b79a1;
+    background: linear-gradient(to right, #4b79a1, #283e51);
 }
 
 .about-description h3 {
-    font-size: 1.8em; /* Slightly larger font size */
+    font-size: 1.5em;
     margin-bottom: 10px;
-    color: white; /* Darker color for better readability */
 }
 
 .about-description p {
-    font-size: 1.2em; /* Slightly larger font size */
-    line-height: 1.8; /* Improved line height for readability */
-    color: white; /* Softer color for better readability */
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
 /* Responsive Design */
