@@ -31,7 +31,7 @@ function displayContent(section) {
             <div class="about-container">
                 <div class="about-photo">
                     <img src="profilepics\\carlosmejia.jpg" alt="Your Photo">
-                    <img src="profilepics\\carlosmejia.jpg" alt="Kemely Photo">
+                    <img src="profilepics\\kemelypfp.jpg" alt="Kemely Photo">
                 </div>
                 <div class="about-description">
                     <div class="description-box">
@@ -40,7 +40,7 @@ function displayContent(section) {
                     </div>
                     <div class="description-box">
                         <h3>Kemely</h3>
-                        <p>teammate description</p>
+                        <p>Hi! I'm Kemely, a computer science student with a passion for game development and web design. </p>
                     </div>
                 </div>
             </div>
