@@ -3,6 +3,11 @@
 ## Overview
 This project is part of a Human-Computer Interaction (HCI) course and aims to develop a website that explores and implements core HCI principles. The website includes several key deliverables, such as research, personas, scenarios, storyboards, and prototypes.
 
+## Link to website 
+https://imkemely.github.io/human-computer-interaction/
+
+
+
 ## Project Deliverables
 
 ### 1. About
