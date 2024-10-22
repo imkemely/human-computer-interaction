@@ -77,6 +77,193 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Persona Styles */
+#persona-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.persona-profile{
+    display: flex;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom:2rem;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.persona-image-container {
+    flex-shrink: 0;
+    margin-right: 2rem;
+}
+.persona-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.persona-basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.persona-title {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.persona-basic-info p {
+    margin:0.7rem 0;
+    font-size: 1.2rem;
+}
+
+.persona-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.persona-background {
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.persona-background h4 {
+    color: #f0f0f0;
+    font-size: 1.4 rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.persona-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.persona-column {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.persona-column:hover {
+    transform: translateY(-5px);
+}
+
+.persona-column h4{
+    color: #f0f0f0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.persona-column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.persona-column li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.persona-quote {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #f0f0f0;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+#switch-persona {
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #6a11cb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#switch-persona:hover{
+    background-color: #e0e0e0;
+    transform: scale (1.05);
+}
+
+/*Scenario Styles*/
+#scenario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scenario-display {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.scenario-title {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.scenario-content {
+    text-align: left;
+}
+
+#scenario-display p {
+    font-size: 1.1 rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+#switch-scenario {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6a11cb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background color 0,3s ease, transfomr 0.2 ease;
+}
+
+#switch-scenario:hover {
+    background-color: lightblue;
+    transform: scale(1.05);
+}
+
 /* Footer Styles */
 /* footer {
     background-color: #333;
@@ -98,8 +285,32 @@ p {
         padding: 1rem;
     }
 
-    footer {
-        font-size: 0.9rem;
+    .persona-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .persona-image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        width: 250px;
+        height: 250px;
+    }
+
+    .persona-info {
+        text-align: center;
+    }
+
+    .persona-title {
+        font-size: center;
+    }
+
+    .persona-details {
+        flex-direction: column;
+    }
+
+    .persona-column {
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -112,6 +323,24 @@ p {
     header h1 {
         font-size: 1.5rem;
     }
+
+    #content {
+        padding: 1.5rem;
+    }
+
+    .persona-title, .scenario-title {
+        font-size: 1.5rem;
+    }
+
+    .persona-image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .persona-title {
+        font-size: 2rem;
+    }
+
 }
 
 .about-container {
