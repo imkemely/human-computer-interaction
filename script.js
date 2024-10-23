@@ -44,7 +44,7 @@ function displayContent(section) {
                     </div>
                     <div class="description-box">
                         <h3>Kemely</h3>
-                        <p>Hi! I'm Kemely, a computer science student with a passion for game development and web design. </p>
+                        <p> Hi! I'm Kemely Alfonso, a computer science student fueled by a passion for technology and its transformative potential to solve real-world challenges. I'm excited about contributing to solutions.</p>
                     </div>
                 </div>
             </div>
