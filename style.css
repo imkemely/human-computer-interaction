@@ -404,6 +404,77 @@ p {
     line-height: 1.6;
 }
 
+#storyboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.storyboard-frame {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.frame-number {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #6a11cb;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.frame-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.frame-title {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.frame-description {
+    font-size: 1.1rem;
+    color: #f0f0f0;
+}
+
+#switch-storyboard {
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #6a11cb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#switch-storyboard:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
