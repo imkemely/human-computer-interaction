@@ -40,7 +40,7 @@ function displayContent(section) {
                 <div class="about-description">
                     <div class="description-box">
                         <h3>Carlos Mejia</h3>
-                        <p> Hi! I'm Carlos, a computer science student with a passion for game development and web design. </p>
+                        <p> Hi! I'm Carlos, a computer science student with a strong passion for game development and web design, eager to create engaging and innovative digital experiences. </p>
                     </div>
                     <div class="description-box">
                         <h3>Kemely</h3>
@@ -247,61 +247,4 @@ function setupPersonaSwitch() {
             displayScenario(currentScenarioIndex);
         });
 
-    }
-
-    function setupStoryboardSwitch() {
-        const storyboards = [
-            {
-                frameNumber: 1,
-                title: "The Problem",
-                image: "images/Dribbble shot HD - 1 (1).png", 
-                description: "Sophia struggles with a complex differential equation using her basic calculator"
-            },
-            {
-                frameNumber: 2,
-                title: "Discovering the Solution",
-                image: "images/Dribbble shot HD - 2 (1).png", 
-                description: "Sophia discovers an advanced engineering calculator app"
-            },
-            {
-                frameNumber: 3,
-                title: "First Impression",
-                image: "images/Dribbble shot HD - 3.png", 
-                description: "Sophia is impressed by the app's specialized engineering keyboard"
-            },
-            {
-                frameNumber: 4,
-                title: "Using Features",
-                image: "images/Dribbble shot HD - 4.png", 
-                description: "She uses the app's built-in formula library"
-            },
-            {
-                frameNumber: 6,
-                title: "Success",
-                image: "images/Dribbble shot HD - 5.png", 
-                description: "Sophia completes her assignment efficiently with the advanced calculator"
-            }
-        ];
-    
-        let currentStoryboardIndex = 0;
-    
-        function displayStoryboard(index) {
-            const storyboard = storyboards[index];
-            const storyboardDisplay = document.getElementById('storyboard-display');
-            storyboardDisplay.innerHTML = `
-                <div class="storyboard-frame">
-                    <div class="frame-number">${storyboard.frameNumber}</div>
-                    <img src="${storyboard.image}" alt="Frame ${storyboard.frameNumber}" class="frame-image">
-                    <h3 class="frame-title">${storyboard.title}</h3>
-                    <p class="frame-description">${storyboard.description}</p>
-                </div>
-            `;
-        }
-    
-        displayStoryboard(currentStoryboardIndex);
-        const switchButton = document.getElementById('switch-storyboard');
-        switchButton.addEventListener('click', () => {
-            currentStoryboardIndex = (currentStoryboardIndex + 1) % storyboards.length;
-            displayStoryboard(currentStoryboardIndex);
-        });
     }
