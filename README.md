@@ -20,8 +20,7 @@ This section provides an overview of the project, its goals, and how the design 
 
 ### 3. Personas
 We created personas to represent our target users, helping guide design decisions by focusing on real user needs. These include:
-- **Persona 1**: [Name], [Role]
-- **Persona 2**: [Name], [Role]
+
 
 ### 4. Scenario
 A scenario that demonstrates how a user would interact with the system to achieve a specific goal, illustrating how our design addresses user needs.
