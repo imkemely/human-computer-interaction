@@ -65,7 +65,16 @@ function displayContent(section) {
         </div>
         `
         ,
-        storyboard: "<h2>Storyboard</h2><p>The storyboard illustrates the interaction flow of the user through the project interface.</p>",
+        storyboard: `
+            <h2>Storyboard</h2>
+            <iframe 
+                style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                width="100%" 
+                height="600" 
+                src="https://embed.figma.com/design/3hTw47iabPrm2vC8ngXluh/Untitled?node-id=0-1&embed-host=share" 
+                allowfullscreen>
+            </iframe>
+        `,
         moodboard: `
             <h2>Moodboard</h2>
             <p>This section showcases the aesthetic direction of the project through Milanote.</p>
@@ -90,6 +99,8 @@ function displayContent(section) {
         setupPersonaSwitch();
     } else if (section ==  'scenario') {
         setupScenarioSwitch();
+    } else if (section == 'storyboard') {
+        setupStoryboardSwitch();
     }
 
 }
@@ -236,4 +247,61 @@ function setupPersonaSwitch() {
             displayScenario(currentScenarioIndex);
         });
 
+    }
+
+    function setupStoryboardSwitch() {
+        const storyboards = [
+            {
+                frameNumber: 1,
+                title: "The Problem",
+                image: "images/Dribbble shot HD - 1 (1).png", 
+                description: "Sophia struggles with a complex differential equation using her basic calculator"
+            },
+            {
+                frameNumber: 2,
+                title: "Discovering the Solution",
+                image: "images/Dribbble shot HD - 2 (1).png", 
+                description: "Sophia discovers an advanced engineering calculator app"
+            },
+            {
+                frameNumber: 3,
+                title: "First Impression",
+                image: "images/Dribbble shot HD - 3.png", 
+                description: "Sophia is impressed by the app's specialized engineering keyboard"
+            },
+            {
+                frameNumber: 4,
+                title: "Using Features",
+                image: "images/Dribbble shot HD - 4.png", 
+                description: "She uses the app's built-in formula library"
+            },
+            {
+                frameNumber: 6,
+                title: "Success",
+                image: "images/Dribbble shot HD - 5.png", 
+                description: "Sophia completes her assignment efficiently with the advanced calculator"
+            }
+        ];
+    
+        let currentStoryboardIndex = 0;
+    
+        function displayStoryboard(index) {
+            const storyboard = storyboards[index];
+            const storyboardDisplay = document.getElementById('storyboard-display');
+            storyboardDisplay.innerHTML = `
+                <div class="storyboard-frame">
+                    <div class="frame-number">${storyboard.frameNumber}</div>
+                    <img src="${storyboard.image}" alt="Frame ${storyboard.frameNumber}" class="frame-image">
+                    <h3 class="frame-title">${storyboard.title}</h3>
+                    <p class="frame-description">${storyboard.description}</p>
+                </div>
+            `;
+        }
+    
+        displayStoryboard(currentStoryboardIndex);
+        const switchButton = document.getElementById('switch-storyboard');
+        switchButton.addEventListener('click', () => {
+            currentStoryboardIndex = (currentStoryboardIndex + 1) % storyboards.length;
+            displayStoryboard(currentStoryboardIndex);
+        });
     }
