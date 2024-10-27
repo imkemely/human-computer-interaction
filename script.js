@@ -85,7 +85,15 @@ function displayContent(section) {
                 style="border: none; border-radius: 8px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);">
             </iframe>
             `,
-        flowchart: "<h2>Flowchart</h2><p>This flowchart outlines the logical structure of the project and its features.</p>",
+        flowchart: `
+            <iframe 
+                style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                width="800" 
+                height="450" 
+                src="https://embed.figma.com/board/5gaDM5YVsECTgES9o61pO6/Octocalc?node-id=0-1&embed-host=share" 
+                allowfullscreen>
+             </iframe>
+             `,
         wireframes: "<h2>Wireframes</h2><p>The wireframes give a visual blueprint of the interface design.</p>",
         gui: "<h2>GUI</h2><p>The graphical user interface (GUI) design and key elements are discussed here.</p>",
         prototype: "<h2>Prototype</h2><p>A clickable prototype demonstrating the functionality of the project.</p>",
