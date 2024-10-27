@@ -88,8 +88,8 @@ function displayContent(section) {
         flowchart: `
             <iframe 
                 style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                width="800" 
-                height="450" 
+                width="100%" 
+                height="1000" 
                 src="https://embed.figma.com/board/5gaDM5YVsECTgES9o61pO6/Octocalc?node-id=0-1&embed-host=share" 
                 allowfullscreen>
              </iframe>
