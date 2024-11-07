@@ -76,8 +76,6 @@ function displayContent(section) {
             </iframe>
         `,
         moodboard: `
-            <h2>Moodboard</h2>
-            <p>This section showcases the aesthetic direction of the project through Milanote.</p>
             <iframe 
                 src="https://app.milanote.com/1T044x1viFPyaF?p=sZftG0VZK38" 
                 width="100%" 
@@ -94,7 +92,15 @@ function displayContent(section) {
                 allowfullscreen>
              </iframe>
              `,
-        wireframes: "<h2>Wireframes</h2><p>The wireframes give a visual blueprint of the interface design.</p>",
+        wireframes: `
+            <iframe 
+                style="border: 1px solid rgba(0, 0, 0, 0.1);" 
+                width="100%" 
+                height="1000" 
+                src="https://embed.figma.com/design/lIjk3fX4pRJTwZIZGnPONR/Octocalc-Wireframe?node-id=0-1&embed-host=share" 
+                allowfullscreen>
+            </iframe>
+            `,
         gui: "<h2>GUI</h2><p>The graphical user interface (GUI) design and key elements are discussed here.</p>",
         prototype: "<h2>Prototype</h2><p>A clickable prototype demonstrating the functionality of the project.</p>",
         references: "<h2>References</h2><p>A list of references and resources used throughout the project.</p>"
