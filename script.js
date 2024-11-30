@@ -102,7 +102,52 @@ function displayContent(section) {
             </iframe>
             `,
         gui: "<h2>GUI</h2><p>The graphical user interface (GUI) design and key elements are discussed here.</p>",
-        prototype: "<h2>Prototype</h2><p>A clickable prototype demonstrating the functionality of the project.</p>",
+        prototype: `
+    <div style="
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 20px; 
+        background-color: #f9f9f9; 
+        border: 1px solid rgba(0, 0, 0, 0.1); 
+        border-radius: 15px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 450px; 
+        margin: auto;
+    ">
+        <h2 style="
+            font-family: Arial, sans-serif; 
+            font-size: 18px; 
+            color: #333; 
+            margin-bottom: 15px; 
+            text-align: center;
+        ">
+            Embedded Flutter App
+        </h2>
+        <iframe 
+            style="
+                border: 1px solid rgba(0, 0, 0, 0.1); 
+                border-radius: 10px; 
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            " 
+            width="430px" 
+            height="700px" 
+            src="http://127.0.0.1:8080/" 
+            allowfullscreen>
+        </iframe>
+        <p style="
+            font-family: Arial, sans-serif; 
+            font-size: 14px; 
+            color: #666; 
+            margin-top: 10px; 
+            text-align: center;
+        ">
+            View the app in iPhone 16 Pro Max dimensions.
+        </p>
+    </div>
+`,
+
         references: "<h2>References</h2><p>A list of references and resources used throughout the project.</p>"
     };
 
