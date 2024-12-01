@@ -132,8 +132,8 @@ function displayContent(section) {
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
             " 
             width="430px" 
-            height="700px" 
-            src="http://127.0.0.1:8080/" 
+            height="850px" 
+            src="https://dainty-duckanoo-e091ce.netlify.app/" 
             allowfullscreen>
         </iframe>
         <p style="
